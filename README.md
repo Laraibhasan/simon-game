@@ -38,4 +38,3 @@ Inspired by the classic **Simon electronic game**, this project tests your abili
 ## 🌐 Live Demo
 
 🔗 [Play Simon Game](https://Laraibhasan.github.io/simon-game)  
-*(Replace with your actual GitHub Pages link)*
