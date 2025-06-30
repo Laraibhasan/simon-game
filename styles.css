@@ -51,3 +51,26 @@ body {
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
+
+#start-btn {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-family: 'Press Start 2P', cursive; /* Retro Game Font */
+  color: white;
+  background-color: #4CAF50; /* Green background */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px #2e7d32;
+  transition: 0.2s;
+}
+
+#start-btn:hover {
+  background-color: #45a049;
+}
+
+#start-btn:active {
+  box-shadow: 0 2px #2e7d32;
+  transform: translateY(2px);
+}
+
