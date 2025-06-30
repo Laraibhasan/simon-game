@@ -5,11 +5,12 @@ var started=false;
 var level=0;
 
 
-$(document).keydown(function(){
+$("#start-btn").click(function () {
     if (!started){
         $("#level-title").text("Level "+ level);
         nextSequence();
         started=true;
+        $("#start-btn").hide(); // Hide after game starts
     }
 });
 
@@ -53,6 +54,7 @@ function startOver(){
     level=0;
     gamePattern=[];
     started=false;
+    $("#start-btn").show(); // Show button again for restart
 };
 
 
@@ -71,7 +73,7 @@ function checkAnswer(currentLevel){
         setTimeout(function(){
             $("body").removeClass("game-over")
         },200);
-        $("h1").text("Game Over, Press Any Key to Restart");
+        $("h1").text("Game Over, Press Start to Restart");
         startOver();
     }
 };
